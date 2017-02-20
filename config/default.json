@@ -1,0 +1,11 @@
+{
+  "name":"default",
+  "port":8080,
+  "db":{
+    "username": "root",
+      "password": "rootroot",
+      "database": "advertising",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+  }
+}
