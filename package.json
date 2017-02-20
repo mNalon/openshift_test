@@ -1,0 +1,16 @@
+{
+  "name": "anuncios-cms-webserver",
+  "version": "1.0.0",
+  "description": "CMS webserver to manage all ads in the system",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mnalon@bitbucket.org/mnalon/anuncios-cms-webserver.git"
+  },
+  "author": "nalon",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/mnalon/anuncios-cms-webserver#readme"
+}
