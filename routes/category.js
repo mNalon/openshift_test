@@ -63,7 +63,7 @@ router.delete('/delete/:id', (req, res)=>{
 });
 
 router.get('/list', (req, res)=>{
-  models.Category.findAll().then((categories)=>{
+  models.Category.findAll({attributes:['id','name','description']}).then((categories)=>{
     res.status(httpStatus.OK).send(categories);
   },(err)=>{
     res.status(httpStatus.INTERNAL_SERVER_ERROR).send('Ocorreu um erro');

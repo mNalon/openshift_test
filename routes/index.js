@@ -8,6 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.use('/category',require('./category'));
+router.use('/subcategory',require('./subcategory'));
 
 /*
   Handler error

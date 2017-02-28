@@ -1,14 +1,15 @@
 'use strict';
+
 module.exports = function(sequelize, DataTypes) {
-  var Category = sequelize.define('Category', {
+  var Subcategory = sequelize.define('Subcategory', {
     name: DataTypes.STRING,
     description: DataTypes.STRING
   }, {
     classMethods: {
       associate: function(models) {
-        Category.hasMany(models.Subcategory, {as:'Category', foreignKey:'category_id', onDelete:'cascade'});
+        Subcategory.belongsTo(models.Category, {foreignKey:'category_id'});
       }
     }
   });
-  return Category;
+  return Subcategory;
 };
